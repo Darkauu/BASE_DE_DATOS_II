@@ -1,33 +1,37 @@
 # Paso 1: Crear y ejecutar el contenedor MySQL
 
-## docker run -d --name mysql-container-name
-## -e MYSQL_ROOT_PASSWORD=mi_contraseña
-## -e MYSQL_DATABASE=mi_base_de_datos
-## -p 3306:3319
-## mysql:8.0
-
+```bash
+docker run -d --name mysql-container-name
+-e MYSQL_ROOT_PASSWORD=mi_contraseña
+-e MYSQL_DATABASE=mi_base_de_datos
+-p 3306:3319
+mysql:8.0
+```
 
 # Paso 2: Conectarse usando el cliente MySQL dentro del contenedor
 
-## docker exec -it mysql-cont -u root -p
-
+```bash
+docker exec -it mysql-cont -u root -p
+```
 
 # Paso 3: Asegurarse de que el contenedor esté ejecutándose
 
-## docker ps
-
+```bash
+docker ps
+```
 
 # Si no se está ejecutanto, iniciarlo revisando el nombre del contenedor
 
-## docker start mysql-containter
-
+```bash
+docker start mysql-containter
+```
 
 # Paso 4: Configurar nueva conexión en MySQL Workbench
- ## 1. Abrir MySQL Workbench
- ## 2. Hacer click en el "+"
- ## 3. Configurar parámetros
- ## 4. Hacer clic en Test Connection
- ## 5. De tener éxito, continuar.
+### 1. Abrir MySQL Workbench
+### 2. Hacer click en el "+"
+### 3. Configurar parámetros
+### 4. Hacer clic en Test Connection
+### 5. De tener éxito, continuar.
 
 # Paso 5: Conectarse y ejecutar el código
 
